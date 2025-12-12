@@ -1,0 +1,1 @@
+**Task #01:** Using the `software.plans` table, calculate how much revenue the company makes each day for each plan. Include columns for the `plan_id` and the daily revenue amount rounded to 2 decimal places.

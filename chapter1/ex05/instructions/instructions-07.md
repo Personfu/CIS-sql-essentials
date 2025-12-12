@@ -1,0 +1,1 @@
+**Task #02:** Using the `retail.inventory` table, calculate what the total inventory would be for each product **with 5 or less items in stock** if all of the items on order were delivered immediately without any other sales taking place. The `product_id` for each product should be the first column in your results.

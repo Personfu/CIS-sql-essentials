@@ -1,0 +1,43 @@
+name: Generate QAI Files
+
+# trigger the workflow manually
+on:
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "generate"
+  generate:
+    runs-on: ubuntu-latest
+
+    # Copy the entire directory structure to a single folder.
+    # Step through the copied repo and remove all files except the starter and solution files
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+
+      - name: Remove the current qai_files directory if it exists or whenever there is a push to `main`
+        run: "rm -rf ./qai_files.zip"
+
+      # TODO:- This line will only copy the files of the last directory on the last iteration.
+      # Currently an empty directory is padding the end of the iteration.
+      - name: Copy the source-file directories
+        run: |
+          find ./* -name "chapter*" -exec cp -r "{}" ./qai_files/ \;
+          find ./* -name "collaboration-exercises" -exec cp -r "{}" ./qai_files/ \;
+
+        # Zip the directory after only the starter and solution files are left
+      - name: Remove all files that are not starter or solution files from the qai_files directory
+        run: |
+          find ./qai_files/* -depth -name "instructions" -type d -exec rm -rf "{}" \;
+          find ./qai_files/* -depth -name "tests" -type d -exec rm -rf "{}" \;
+          zip -r qai_files.zip ./qai_files
+          rm -rf ./qai_files
+
+      - name: Upload qai_files as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: qai_files
+          path: ./qai_files.zip
+          retention-days: 1

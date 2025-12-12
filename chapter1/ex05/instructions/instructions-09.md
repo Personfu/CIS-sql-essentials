@@ -1,0 +1,3 @@
+# The Situation:
+
+The Director of Marketing for Monday Boots wants to get back to his roots of when he was a Merchandising Associate and get his hands dirty by pouring over some individual order records! He wants to go down a list of orders and see as much detail as possible about each one. He comes to you for this data...

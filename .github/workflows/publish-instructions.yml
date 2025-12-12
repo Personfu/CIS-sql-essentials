@@ -1,0 +1,53 @@
+name: Publish Instructions via SFTP (lftp)
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - template
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare staging area and rename .setup.sql files
+        run: |
+          rm -rf staging
+          mkdir -p staging
+
+          rsync -av \
+            --exclude='.git' \
+            --exclude='staging' \
+            ./ staging/
+
+          find staging -type f -name ".setup.sql" -print0 | while IFS= read -r -d '' f; do
+            dir="$(dirname "$f")"
+            mv "$f" "$dir/_setup.sql"
+          done
+
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
+      - name: Upload via SFTP using lftp mirror
+        run: |
+          lftp -u "${{ secrets.SFTP_USERNAME }},${{ secrets.SFTP_PASSWORD }}" sftp://${{ secrets.SFTP_HOST }} << EOF
+            set sftp:auto-confirm yes
+            set ssl:verify-certificate no
+
+            mkdir -p "${{ secrets.SFTP_TARGET_DIR }}"
+            cd "${{ secrets.SFTP_TARGET_DIR }}"
+
+            mirror --reverse --verbose --delete \
+              --exclude '(^|/)\.[^/]+(/|$)' \
+              staging \
+              .
+          EOF

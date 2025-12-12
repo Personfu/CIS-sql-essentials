@@ -1,0 +1,1 @@
+**Task #04:** Now that you have the `discount_pct`, use your code from that calculation and multiply it by the `original_price` to see if it matches the `discount_amount` you calculated . Again, do this calculation in a new column and name the column `discount_check`.
