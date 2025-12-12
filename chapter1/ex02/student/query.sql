@@ -1,3 +1,2 @@
-SELECT *
+SELECT cancelled_at 
 FROM software.subscriptions
-LIMIT 50
