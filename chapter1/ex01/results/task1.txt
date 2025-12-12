@@ -1,0 +1,7 @@
+
+Status: FAILED!
+Check: 1
+Test: Exercise #1
+Reason: The following error is preventing tests from completing: 1146 (42S02): Table 'retail.inventory' doesn't exist
+Error : ProgrammingError - 1146 (42S02): Table 'retail.inventory' doesn't exist
+Timestamp: 2025-12-12 04:27:45.510424
