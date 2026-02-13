@@ -32,6 +32,8 @@ SQL essentials curriculum extended with FLLC security operations labs. Covers SQ
 | 03 | `fllc-security-labs/03-hardening/` | Database hardening checklist — permissions, encryption, audit config |
 | 04 | `fllc-security-labs/04-compliance/` | SOC 2, PCI-DSS, NIST compliance audit queries |
 | 05 | `fllc-security-labs/05-ai-detection/` | AI/ML anomaly detection patterns in pure SQL |
+| 06 | `fllc-security-labs/06-privesc/` | Database privilege escalation attack/defense patterns |
+| 07 | `fllc-security-labs/07-exfiltration/` | Data exfiltration techniques and real-time detection queries |
 
 ---
 
