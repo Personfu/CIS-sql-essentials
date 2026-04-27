@@ -1,4 +1,4 @@
--- FuruliePreston-Final: query_downloads.sql
+-- PersonFu-Final: query_downloads.sql
 USE my_web_db;
 
 SELECT u.email,

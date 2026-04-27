@@ -1,4 +1,4 @@
--- FuruliePreston-Final: create_my_web_db.sql
+-- PersonFu-Final: create_my_web_db.sql
 -- Creates my_web_db with utf8mb4, InnoDB, and normalized download tracking schema.
 
 DROP DATABASE IF EXISTS my_web_db;

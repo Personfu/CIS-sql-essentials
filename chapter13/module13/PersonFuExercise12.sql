@@ -1,4 +1,4 @@
--- FuruliePrestonExercise12.sql
+-- PersonFuExercise12.sql
 -- CIS276DA MySQL Database Module 15 / Chapter 13 stored procedure exercises
 
 DROP PROCEDURE IF EXISTS test;

@@ -1,4 +1,4 @@
--- FuruliePreston-Final: add_zip_index_my_guitar_shop.sql
+-- PersonFu-Final: add_zip_index_my_guitar_shop.sql
 USE my_guitar_shop;
 
 ALTER TABLE Customers

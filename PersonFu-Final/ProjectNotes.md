@@ -1,4 +1,4 @@
-# Furulie Preston Final Project Notes
+# Person Fu Final Project Notes
 
 ## Project Overview
 This submission includes the final MySQL database development work for CIS276DA. It satisfies the final project requirements by demonstrating database design, normalization, indexing, and reporting.

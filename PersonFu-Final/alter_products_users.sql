@@ -1,4 +1,4 @@
--- FuruliePreston-Final: alter_products_users.sql
+-- PersonFu-Final: alter_products_users.sql
 USE my_web_db;
 
 -- Add product metadata columns.

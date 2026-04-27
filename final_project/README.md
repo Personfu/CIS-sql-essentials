@@ -18,4 +18,4 @@ This folder contains the final MySQL database implementation for the course.
 - The project demonstrates both database creation and schema maintenance through ALTER statements.
 
 
-Submission package: `FuruliePreston-Final` contains the final SQL scripts, documentation, and project notes for grading.
+Submission package: `PersonFu-Final` contains the final SQL scripts, documentation, and project notes for grading.

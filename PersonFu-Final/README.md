@@ -1,4 +1,4 @@
-# Furulie Preston Final Project Submission
+# Person Fu Final Project Submission
 
 This package contains the complete final project submission for CIS276DA - MySQL Database.
 The files are organized for easy review and align with the final project requirements.
