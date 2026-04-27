@@ -1,4 +1,4 @@
-# Module 16 Instructional Material and Presentation
+# Module 16: Triggers and Events
 
 ## Creating Triggers and Events in MySQL
 This module teaches trigger-based validation, audit logging, and event scheduler automation.

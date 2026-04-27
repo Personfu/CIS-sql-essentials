@@ -1,4 +1,4 @@
-# Module 11 Instructional Material and Presentation
+# Module 11: Working with Data Types
 
 ## Working with Data Types in MySQL
 This module explains how to choose and use MySQL data types for text, numeric, date/time, and binary data.

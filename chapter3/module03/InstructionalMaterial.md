@@ -1,4 +1,4 @@
-# Module 3 Instructional Material and Presentation
+# Module 3: Retrieving Data from a Single Table
 
 ## SELECT Basics
 - Retrieve all columns: `SELECT * FROM table_name;`

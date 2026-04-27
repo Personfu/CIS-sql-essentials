@@ -1,4 +1,4 @@
-# Module 5 Instructional Material and Presentation
+# Module 5: Insert, Update, and Delete Data
 
 ## INSERT Statement
 - Add new rows to a table

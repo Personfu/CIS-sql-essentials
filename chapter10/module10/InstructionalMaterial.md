@@ -1,4 +1,4 @@
-# Module 10 Instructional Material and Presentation
+# Module 10: Subqueries and Correlated Queries
 
 ## Introduction to Subqueries
 This module teaches subqueries as a powerful tool for filtering, scalar computation, and correlated row evaluation.

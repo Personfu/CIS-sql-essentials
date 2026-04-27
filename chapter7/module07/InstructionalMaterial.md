@@ -1,4 +1,4 @@
-# Module 7 Instructional Material and Presentation
+# Module 7: Database Security and Privilege Management
 
 ## MySQL Security Fundamentals
 - User accounts and authentication

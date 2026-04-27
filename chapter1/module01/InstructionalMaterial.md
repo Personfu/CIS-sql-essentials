@@ -1,4 +1,4 @@
-# Module 1 Instructional Material and Presentation
+# Module 1: Introduction to Relational Databases
 
 ## What is a Relational Database?
 A relational database organizes data into tables (relations) consisting of rows and columns. Each table represents an entity, and relationships between tables are established using keys.

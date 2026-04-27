@@ -1,4 +1,4 @@
-# Module 6 Instructional Material and Presentation
+# Module 6: Introduction to Database Administration
 
 ## Database Administrator Responsibilities
 - User management: creating, modifying, and deleting users

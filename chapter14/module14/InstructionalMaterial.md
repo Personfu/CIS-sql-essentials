@@ -1,4 +1,4 @@
-# Module 14 Instructional Material and Presentation
+# Module 14: Transactions and Locking
 
 ## Transactions and Locking in MySQL
 This module covers transaction control, row locking, and rollback behavior for safe MySQL data updates.

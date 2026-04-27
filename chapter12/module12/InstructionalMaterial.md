@@ -1,4 +1,4 @@
-# Module 12 Instructional Material and Presentation
+# Module 12: Views in MySQL
 
 ## How to Create Views in MySQL
 This module teaches students how to create and use views to simplify query logic, centralize business rules, and enable view-based data access.

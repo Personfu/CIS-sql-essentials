@@ -1,4 +1,4 @@
-# Module 9 Instructional Material and Presentation
+# Module 9: Summary Queries and Aggregations
 
 ## Overview of Summary Queries
 In this module, you will master aggregation and analytic SQL patterns that turn raw transaction data into meaningful business summaries.

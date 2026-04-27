@@ -1,4 +1,4 @@
-# Module 15 Instructional Material and Presentation
+# Module 15: Procedures and Functions
 
 ## Creating Stored Procedures and Functions
 This module teaches how to build stored procedures and functions that validate input, calculate values, and raise errors.

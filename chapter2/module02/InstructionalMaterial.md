@@ -1,4 +1,4 @@
-# Module 2 Instructional Material and Presentation
+# Module 2: Using MySQL Workbench
 
 ## Installing MySQL Workbench
 - Download from the official MySQL website

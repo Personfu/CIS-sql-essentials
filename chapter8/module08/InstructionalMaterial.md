@@ -1,4 +1,4 @@
-# Module 8 Instructional Material and Presentation
+# Module 8: Backup and Restore Operations
 
 ## MySQL Backup and Restore Strategies
 - Full vs. incremental backups

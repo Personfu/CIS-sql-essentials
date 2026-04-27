@@ -1,4 +1,4 @@
-# Module 4 Instructional Material and Presentation
+# Module 4: Retrieving Data from Two or More Tables
 
 ## JOIN Basics
 - Combine data from two or more tables using JOINs

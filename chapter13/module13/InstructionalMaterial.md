@@ -1,4 +1,4 @@
-# Module 13 Instructional Material and Presentation
+# Module 13: Stored Programs and Procedures
 
 ## Language Skills for Writing Stored Programs
 This module teaches stored procedures, variables, control flow, cursors, and error handling in MySQL.
