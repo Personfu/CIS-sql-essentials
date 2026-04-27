@@ -1,28 +1,42 @@
-# SQL Essentials for the Real World
+# SQL Essentials for the Real World Microcourse
 
-This repository contains a full 16-module SQL course with practical MySQL exercises, quizzes, reflections, and a final project.
+This repository contains a complete SQL course for undergraduate study. It is organized by chapter and includes instructional material, exercises, quizzes, reflections, practical SQL scripts, and a final project.
 
-The course covers:
-- core SQL query skills (SELECT, JOIN, aggregation, subqueries)
-- MySQL database administration and security controls
-- stored programs, transactions, triggers, and scheduled events
-- a final project that applies schema design, data loading, and reporting
+## Course structure
 
-## Repository structure
-
-- `chapter1/` through `chapter16/` — module content organized by chapter
-- `docs/` — course orientation and student support materials
+- `chapter1/` through `chapter16/` — course chapters with module content
+- `docs/` — course orientation, expectations, and student support
 - `final_project/` — capstone project files and SQL scripts
-- `fllc-security-labs/` — advanced SQL security and compliance labs
-- `fllc-cheatsheets/` — key SQL and compliance reference materials
+- `fllc-security-labs/` — optional supplementary labs on SQL security and compliance
+- `fllc-cheatsheets/` — reference material for SQL and audit concepts
+
+## Course topics
+
+1. Chapter 1 — Relational databases and schema design
+2. Chapter 2 — MySQL Workbench and database setup
+3. Chapter 3 — Retrieving data from a single table
+4. Chapter 4 — Joining multiple tables
+5. Chapter 5 — Insert, update, and delete operations
+6. Chapter 6 — Basic database administration
+7. Chapter 7 — Database security and privilege management
+8. Chapter 8 — Backup and restore procedures
+9. Chapter 9 — Summary queries and aggregation
+10. Chapter 10 — Subqueries and correlated queries
+11. Chapter 11 — MySQL data types and constraints
+12. Chapter 12 — Views and logical presentation of data
+13. Chapter 13 — Stored programs and procedures
+14. Chapter 14 — Transactions and locking
+15. Chapter 15 — Functions and stored procedures
+16. Chapter 16 — Triggers and scheduled events
 
 ## How to use this repository
 
-1. Review `docs/Welcome.md` and `docs/Orientation.md`.
-2. Complete each module in order, using the chapter folders and SQL scripts.
-3. Use `Assignment.md` and `Quiz.md` for module requirements and knowledge checks.
-4. Complete the final project after finishing the core modules.
+1. Begin with `docs/Welcome.md` and `docs/Orientation.md`.
+2. Work through chapters in order.
+3. Read each chapter's `InstructionalMaterial.md` and complete the examples.
+4. Use `Assignment.md` for graded work and `Quiz.md` for knowledge checks.
+5. Finish the final project after chapter 16.
 
 ## Notes
 
-This course is designed for undergraduate-level SQL learning and MySQL practice. The materials are intended to support hands-on lab work, structured assignments, and professional skill development.
+This course is intended for students who want practical, college-level training in SQL and MySQL. The content is structured to support lab work, problem solving, and applied practice.
