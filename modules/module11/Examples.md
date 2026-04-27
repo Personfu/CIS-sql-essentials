@@ -31,4 +31,4 @@ CREATE TABLE downloads (
 
 ---
 
-These examples support the data type principles covered in chapter 8 and in `student_download/book_scripts/ch08/8-08.sql`.
+These examples support the data type principles covered in chapter 8 and in `repository sample scripts/ch08/8-08.sql`.

@@ -11,7 +11,7 @@
 ## Assignment Instructions
 
 ### Exercise 1: Install MySQL Workbench
-Follow the installation guide for your operating system (see Appendix A/B). Take a screenshot of the completed installation and save it as `LastnameFirstnameModule2_Install.png`.
+Follow the installation guide for your operating system (see the official MySQL Workbench installation documentation for your OS). Take a screenshot of the completed installation and save it as `LastnameFirstnameModule2_Install.png`.
 
 ### Exercise 2: Connect to a MySQL Server
 Create a new connection in Workbench. Take a screenshot of the successful connection and save it as `LastnameFirstnameModule2_Connection.png`.
@@ -21,7 +21,7 @@ Use Workbench to create a new database named `test_db` and a table named `test_t
 Export the CREATE statements as `LastnameFirstnameModule2_Create.sql`.
 
 ### Exercise 4: Run a Script
-Open and execute one of the provided scripts from `../../scripts/book_scripts/ch02/`. Take a screenshot of the results and save as `LastnameFirstnameModule2_Script.png`.
+Open and execute one of the provided sample SQL scripts included in this repository. ch02/`. Take a screenshot of the results and save as `LastnameFirstnameModule2_Script.png`.
 
 ---
 

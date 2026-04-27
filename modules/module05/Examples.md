@@ -17,4 +17,4 @@ DELETE FROM Products WHERE product_id = 2;
 
 ---
 
-For more examples, see the scripts in `../../scripts/book_scripts/ch05/` and solutions in `../../scripts/ex_solutions/ch05/`.
+For more examples, see the built-in examples in this repository. ch05/` and solutions in `the repository sample solutions and internal examples. /`.

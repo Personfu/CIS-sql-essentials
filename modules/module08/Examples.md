@@ -16,4 +16,4 @@ mysql -u root -p mydb < mydb_backup.sql
 
 ---
 
-For more examples, see scripts in `../../scripts/book_scripts/ch19/` and solutions in `../../scripts/ex_solutions/ch19/`.
+For more examples, see scripts in `the repository sample scripts contained in this module and the course materials. ` and solutions in `the repository sample solutions and internal examples. /`.

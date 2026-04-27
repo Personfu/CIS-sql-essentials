@@ -25,4 +25,4 @@ JOIN Products p ON oi.product_id = p.product_id;
 
 ---
 
-For more examples, see the scripts in `../../scripts/book_scripts/ch04/`.
+For more examples, see the built-in examples in this repository. ch04/`.

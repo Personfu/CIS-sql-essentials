@@ -30,4 +30,4 @@ FROM invoices;
 
 ---
 
-These examples align with the chapter 6 scripts in `student_download/book_scripts/ch06/`.
+These examples align with the chapter 6 scripts in `repository sample scripts/ch06/`.

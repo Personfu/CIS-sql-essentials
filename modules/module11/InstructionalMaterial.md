@@ -40,5 +40,5 @@ CREATE TABLE downloads (
 ---
 
 ### Reference materials
-- Source scripts: `student_download/book_scripts/ch08/8-08.sql`, `8-09.sql`
-- Example solutions: `student_download/ex_solutions/ch08`
+- Source scripts: `repository sample scripts/ch08/8-08.sql`, `8-09.sql`
+- Example solutions: `repository sample solutions/ch08`

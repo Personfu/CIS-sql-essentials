@@ -37,5 +37,5 @@ This module uses chapter 6 scripts and applies them to real business questions s
 ---
 
 ### Reference materials
-- Source scripts: `student_download/book_scripts/ch06/6-01.sql`, `6-11.sql`
-- Example solutions: `student_download/ex_solutions/ch06`
+- Source scripts: `repository sample scripts/ch06/6-01.sql`, `6-11.sql`
+- Example solutions: `repository sample solutions/ch06`

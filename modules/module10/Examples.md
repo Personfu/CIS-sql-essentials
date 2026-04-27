@@ -37,4 +37,4 @@ WHERE i.payment_total < (
 
 ---
 
-These examples follow patterns found in `student_download/book_scripts/ch07/7-01.sql` and related chapter 7 exercises.
+These examples follow patterns found in `repository sample scripts/ch07/7-01.sql` and related chapter 7 exercises.

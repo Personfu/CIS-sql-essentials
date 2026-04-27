@@ -37,4 +37,4 @@ DROP INDEX invoices_vendor_id_index ON invoices;
 
 ---
 
-These examples are drawn from the chapter 1 base scripts in `student_download/book_scripts/ch01/1-11.sql` and reflect real-world table creation and schema management practices.
+These examples are drawn from the chapter 1 base scripts in `repository sample scripts/ch01/1-11.sql` and reflect real-world table creation and schema management practices.

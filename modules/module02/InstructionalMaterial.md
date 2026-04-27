@@ -2,7 +2,7 @@
 
 ## Installing MySQL Workbench
 - Download from the official MySQL website
-- Follow the installation guide for your OS (see Appendix A/B)
+- Follow the installation guide for your OS (see the official MySQL Workbench installation documentation for your OS)
 
 ## Connecting to a MySQL Server
 - Open Workbench and create a new connection
@@ -14,9 +14,9 @@
 - Explore the schema navigator and table editor
 
 ## Running SQL Scripts
-- Open a SQL script file (e.g., from `../../scripts/book_scripts/ch02/`)
+- Open a SQL script file (e.g., from `the repository sample scripts contained in this module and the course materials. `)
 - Execute statements or the entire script using the toolbar
 
 ---
 
-For more examples, see the scripts in `../../scripts/book_scripts/ch02/`.
+For more examples, see the built-in examples in this repository. ch02/`.

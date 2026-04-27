@@ -14,9 +14,9 @@ CREATE TABLE sample_table (
 ```
 
 ## Example 3: Running a Script
-- Open `select_vendor_city_state.sql` from `../../scripts/book_scripts/ch02/`
+- Open `select_vendor_city_state.sql` from `the repository sample scripts contained in this module and the course materials. `
 - Execute the script in MySQL Workbench
 
 ---
 
-For more examples, see the scripts in `../../scripts/book_scripts/ch02/`.
+For more examples, see the built-in examples in this repository. ch02/`.

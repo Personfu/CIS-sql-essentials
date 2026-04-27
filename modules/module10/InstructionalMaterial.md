@@ -34,5 +34,5 @@ WHERE EXISTS (
 ---
 
 ### Reference materials
-- Source scripts: `student_download/book_scripts/ch07/7-01.sql`
-- Example solutions: `student_download/ex_solutions/ch07`
+- Source scripts: `repository sample scripts/ch07/7-01.sql`
+- Example solutions: `repository sample solutions/ch07`

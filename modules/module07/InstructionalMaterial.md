@@ -17,4 +17,4 @@ REVOKE INSERT ON mydb.* FROM 'app_user'@'localhost';
 
 ---
 
-For more examples, see scripts in `../../scripts/book_scripts/ch18/` and solutions in `../../scripts/ex_solutions/ch18/`.
+For more examples, see scripts in `the repository sample scripts contained in this module and the course materials. ` and solutions in `the repository sample solutions and internal examples. /`.

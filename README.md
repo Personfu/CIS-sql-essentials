@@ -1,87 +1,80 @@
-```
- ███████╗██╗     ██╗      ██████╗
- ██╔════╝██║     ██║     ██╔════╝
- █████╗  ██║     ██║     ██║
- ██╔══╝  ██║     ██║     ██║
- ██║     ███████╗███████╗╚██████╗
- ╚═╝     ╚══════╝╚══════╝ ╚═════╝
-  SQL SECURITY OPERATIONS — 2026
-```
+# SQL Essentials for the Real World Microcourse
 
-<p align="center">
-<img src="https://img.shields.io/badge/FLLC-SQL_Security-00FFFF?style=for-the-badge&labelColor=0D0D2B"/>
-<img src="https://img.shields.io/badge/NIST-Compliant-FF00FF?style=for-the-badge&labelColor=0D0D2B"/>
-<img src="https://img.shields.io/badge/SOC2-Audit-7B2FBE?style=for-the-badge&labelColor=0D0D2B"/>
-<img src="https://img.shields.io/badge/AI-Detection-00FFFF?style=for-the-badge&labelColor=0D0D2B"/>
-</p>
+## Professional SQL Training with Practical Implementation
 
----
+This repository delivers a complete SQL training curriculum for developers, analysts, and database engineers who need real-world MySQL skills.
 
-## Overview
+The course is organized as a structured, project-driven learning path through core SQL concepts, database administration, and application-ready stored programming techniques.
 
-SQL essentials curriculum extended with FLLC security operations labs. Covers SQL injection attack/defense, digital forensics via SQL, database hardening, compliance auditing, and AI-powered anomaly detection — all using pure SQL.
+## What this repository contains
 
----
+- `docs/` – Course orientation, objectives, instructor support, and learning guidance
+- `modules/` – Sixteen modules with instructional material, practice examples, quizzes, reflections, and submission artifacts
+- `final_project/` – Capstone project files with database creation, schema changes, and reporting queries
+- `fllc-security-labs/` – SQL security, forensic, compliance, and anomaly detection labs
+- `fllc-cheatsheets/` – Practical SQL security and compliance cheat sheets
+- `chapter0/`, `chapter1/` – Supporting chapter resources for the course structure
+- `.github/workflows/` – Repository automation workflows
+- `.devcontainer/` – Development container configuration for reproducible environments
 
-## FLLC Security Labs
+## Audience and outcomes
 
-| Lab | Directory | Description |
-|-----|-----------|-------------|
-| 01 | `fllc-security-labs/01-injection/` | SQL injection attack patterns, parameterized defense, WAF bypass |
-| 02 | `fllc-security-labs/02-forensics/` | Forensic investigation queries — timeline reconstruction, IOC extraction |
-| 03 | `fllc-security-labs/03-hardening/` | Database hardening checklist — permissions, encryption, audit config |
-| 04 | `fllc-security-labs/04-compliance/` | SOC 2, PCI-DSS, NIST compliance audit queries |
-| 05 | `fllc-security-labs/05-ai-detection/` | AI/ML anomaly detection patterns in pure SQL |
-| 06 | `fllc-security-labs/06-privesc/` | Database privilege escalation attack/defense patterns |
-| 07 | `fllc-security-labs/07-exfiltration/` | Data exfiltration techniques and real-time detection queries |
+This course is designed for:
+- developers preparing for database engineering or backend roles
+- analysts who need advanced SQL query and reporting skills
+- IT professionals who must secure, maintain, and automate MySQL databases
 
----
+By the end of this course, learners will be able to:
+- design normalized relational schemas and enforce referential integrity
+- write production-grade SQL queries using joins, aggregations, subqueries, and window functions
+- implement transactions, stored procedures, functions, triggers, and scheduled events in MySQL
+- manage users, privileges, backups, and recovery for operational database systems
+- build audit-capable workloads and apply database security best practices
 
-## FLLC Cheatsheets
+## Repository structure
 
-| Cheatsheet | Description |
-|------------|-------------|
-| `fllc-cheatsheets/SQL_CHEATSHEET.md` | SQL security quick reference |
-| `fllc-cheatsheets/COMPLIANCE_SQL.md` | Compliance audit queries mapped to NIST/PCI/SOC2 controls |
+### Modules
+Each module folder contains:
+- `InstructionalMaterial.md` – teaching content and real-world examples
+- `Examples.md` – hands-on SQL snippets demonstrating the module topic
+- `Assignment.md` – graded tasks and expectations
+- `Quiz.md` – knowledge checks and review questions
+- `Reflections.md` – learning reflection prompts
+- `moduleXX_*.sql` / `moduleXX_notes.txt` – submission artifacts for practical work
 
----
+### Final project
+The `final_project/` folder contains a full database implementation with:
+- schema creation and sample data
+- schema maintenance via ALTER scripts
+- reporting queries for download tracking and analytics
 
-## Course Content
+### Security labs and cheatsheets
+The `fllc-security-labs/` content extends the curriculum with security-focused SQL use cases:
+- injection and defensive coding
+- forensic and compliance queries
+- AI-assisted anomaly detection patterns
 
-Original SQL essentials curriculum from the Cengage microcourse:
+## How to use this repository
 
-| Chapter | Topic |
-|---------|-------|
-| 0 | Setup and environment |
-| 1 | SQL fundamentals, SELECT, WHERE, JOIN |
+1. Clone the repository and open it in a compatible editor.
+2. Review the `docs/Welcome.md` and `docs/Orientation.md` pages.
+3. Work through modules in numerical order from `modules/module01` through `modules/module16`.
+4. Execute the SQL files in the `moduleXX` folders against a MySQL test instance.
+5. Complete the final project after finishing the core modules.
 
----
+## Recommended workflow
 
-## Quick Start
+- Use MySQL Workbench, MySQL Shell, or a compatible local MySQL server
+- Run each module's sample and submission scripts in an isolated development schema
+- Capture output or screenshots where required, and keep notes in the module folder
+- Use the built-in notes files to document completion and observations
 
-```sql
--- Run any lab against your database:
--- PostgreSQL
-psql -d yourdb -f fllc-security-labs/04-compliance/compliance_audit.sql
+## Notes for reviewers
 
--- MySQL
-mysql yourdb < fllc-security-labs/05-ai-detection/ai_anomaly_detection.sql
-
--- SQL Server
-sqlcmd -d yourdb -i fllc-security-labs/04-compliance/compliance_audit.sql
-```
-
----
-
-## Compliance Coverage
-
-| Framework | Controls Tested |
-|-----------|----------------|
-| NIST 800-53 r5 | AC-2, AC-3, AC-6, AU-2, AU-3, AU-6, IA-5, SC-13, SC-28 |
-| PCI-DSS 4.0 | 2.2, 3.5, 7.1, 8.3, 10.2, 10.3, 10.6 |
-| SOC 2 Type II | CC6.1, CC6.3, CC6.6, CC7.2, CC8.1 |
-| CIS Controls v8 | 3.1, 4.1, 5.2, 6.7, 8.2, 16.1 |
+This repository has been standardized to match the intended course folder layout shown in the reference image. The content includes module-level submission files and clean course navigation, with broken external references replaced by internal repository guidance.
 
 ---
 
-**FLLC 2026** — FU PERSON by PERSON FU
+## License and disclaimer
+
+For educational use only. This material is not intended as a commercially licensed product.

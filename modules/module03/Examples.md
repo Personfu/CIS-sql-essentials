@@ -22,4 +22,4 @@ SELECT product_name AS Product, price AS Cost FROM Products;
 
 ---
 
-For more examples, see the scripts in `../../scripts/book_scripts/ch03/`.
+For more examples, see the built-in examples in this repository. ch03/`.

@@ -18,4 +18,4 @@ SET GLOBAL wait_timeout = 600;
 
 ---
 
-For more examples, see the scripts in `../../scripts/book_scripts/ch17/` and solutions in `../../scripts/ex_solutions/ch17/`.
+For more examples, see the built-in examples in this repository. ch17/` and solutions in `the repository sample solutions and internal examples. /`.
