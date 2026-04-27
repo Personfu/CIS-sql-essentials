@@ -16,3 +16,6 @@ This folder contains the final MySQL database implementation for the course.
 - The database uses `utf8mb4` and `InnoDB`.
 - The schema enforces referential integrity between `users`, `products`, and `downloads`.
 - The project demonstrates both database creation and schema maintenance through ALTER statements.
+
+
+Submission package: `FuruliePreston-Final` contains the final SQL scripts and notes.

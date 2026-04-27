@@ -4,7 +4,8 @@
 This final project is a professional demonstration of your MySQL implementation skills. You will build a complete database schema, populate it with sample data, and validate constraint behavior.
 
 ## Deliverables
-1. A folder named `LastnameFirstname-Final`
+1. A folder named `LastnameFirstName-Final`
+2. A submission package named `FuruliePreston-Final` can be used for this student deliverable.
 2. SQL scripts that create the `my_web_db` database and required tables
 3. Scripted sample data inserts for users, products, and downloads
 4. A verified join query that returns downloads with user email and product name
