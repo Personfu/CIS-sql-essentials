@@ -1,0 +1,6 @@
+Furulie Preston Exercise 12 notes:
+- Created five stored procedure scripts as required for Chapter 13.
+- Used variables and conditional logic to display product count and average prices.
+- Calculated common factors of 10 and 20 using a loop.
+- Implemented a cursor-based output string for products with list_price > 700.
+- Added duplicate handling for inserting the category 'Guitars'.
