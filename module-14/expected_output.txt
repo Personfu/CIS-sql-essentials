@@ -1,0 +1,4 @@
+3
+1|Alice Anderson|alice@example.com|2026-01-15
+2|Bob Brown|no-email@example.com|2026-02-10
+3|Carol Clark|carol@example.com|2026-03-05

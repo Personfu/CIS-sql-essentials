@@ -1,0 +1,6 @@
+5
+1|Keyboard|79.99|2
+5|Keyboard|89.99|1
+4|Mouse|24.99|2
+2|Mouse|29.99|1
+3|Monitor|199.99|1

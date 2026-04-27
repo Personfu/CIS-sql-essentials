@@ -1,0 +1,2 @@
+2|Power Bank|5
+4|Travel Adapter|3

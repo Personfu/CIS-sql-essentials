@@ -1,0 +1,85 @@
+name: Autograde SQL Modules
+
+on:
+  pull_request:
+    paths:
+      - 'module-*/*'
+      - '.github/**'
+      - 'scripts/**'
+
+jobs:
+  autograde:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    services:
+      mysql:
+        image: mysql:8
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent --protocol=TCP -uroot -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install MySQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y default-mysql-client
+
+      - name: Wait for MySQL service
+        run: |
+          for i in $(seq 1 20); do
+            if mysqladmin ping -h127.0.0.1 -uroot -proot --silent; then
+              echo "MySQL is ready"
+              exit 0
+            fi
+            sleep 3
+          done
+          exit 1
+
+      - name: Detect changed modules
+        id: changed_modules
+        run: |
+          python .github/scripts/find_changed_modules.py > changed_modules.txt
+          echo "changed_modules=$(cat changed_modules.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Run autograder
+        id: autograde
+        continue-on-error: true
+        run: |
+          python .github/scripts/autograde.py --modules "${{ steps.changed_modules.outputs.changed_modules }}" --comment-file comment.txt --progress-file progress.json || true
+          echo "autograde_comment<<EOF" >> "$GITHUB_OUTPUT"
+          cat comment.txt >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Commit updated progress
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add progress.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update module progress via autograder"
+            git push
+          else
+            echo "No progress.json changes to commit."
+          fi
+
+      - name: Post PR feedback comment
+        if: always()
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          header: autograde-feedback
+          message: ${{ steps.autograde.outputs.autograde_comment }}

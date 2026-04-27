@@ -1,0 +1,6 @@
+5
+1|Wireless Mouse|24.99|Accessories
+2|Mechanical Keyboard|119.99|Accessories
+3|USB-C Hub|39.95|Accessories
+4|Laptop Stand|49.00|Furniture
+5|Noise-Canceling Headphones|199.50|Audio
