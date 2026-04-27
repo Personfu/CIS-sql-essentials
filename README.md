@@ -58,7 +58,7 @@ The `fllc-security-labs/` content extends the curriculum with security-focused S
 
 1. Clone the repository and open it in a compatible editor.
 2. Review the `docs/Welcome.md` and `docs/Orientation.md` pages.
-3. Work through modules in numerical order from `modules/module01` through `modules/module16`.
+3. Work through chapters in numerical order from `chapter1/module01` through `chapter16/module16`.
 4. Execute the SQL files in the `moduleXX` folders against a MySQL test instance.
 5. Complete the final project after finishing the core modules.
 
